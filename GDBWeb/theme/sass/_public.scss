@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+html {
+    font: {
+        family: 'Microsoft YaHei UI', 'Microsoft YaHei', 'DengXian', 'SimSun', 'Segoe UI', Tahoma, Helvetica, sans-serif;
+        size: 625%;
+    };
+}
+
+body {
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    outline: none;
+}
+
+%flex {
+    display: flex;
+    justify-content: center;
+}
+
+.dis-flex {
+    @extend %flex;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+} /* for IE/Mac */
